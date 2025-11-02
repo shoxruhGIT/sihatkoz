@@ -138,7 +138,17 @@ const Header = () => {
               Контакты
             </a>
           </div>
-          <Language />
+          <select className="header__container-lang" name="lang" id="lang">
+            <option className="lang-item" value="RU">
+              iOS 18.4RU
+            </option>
+            <option className="lang-item" value="EN">
+              EN
+            </option>
+            <option className="lang-item" value="UZ">
+              UZ
+            </option>
+          </select>
         </div>
       </div>
     </header>

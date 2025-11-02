@@ -83,7 +83,7 @@
 
 .list-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; // 2 ustunli ro'yxat
+  grid-template-columns: 1fr 1fr;
   gap: 10px 30px;
   justify-items: start;
 }
@@ -148,7 +148,6 @@
   .main-image {
     width: 304px;
     height: 333px;
-    // margin-left: -60px;
   }
   .floating-image {
     width: 179px;

@@ -67,7 +67,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* 3. Klientam (Menu ustuni) */}
           <div className="footer__column footer__column--nav nav-col">
             <h4 className="nav-col__title">Клиентам</h4>
             <ul className="nav-col__list">
@@ -94,7 +93,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* 4. Kontakti (Ma'lumotlar ustuni) */}
           <div className="footer__column footer__column--contacts contacts-col">
             <h4 className="contacts-col__title">Контакты</h4>
             <ul className="contacts-col__list">
@@ -126,7 +124,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Pastki qism: Kopirayt va Dizayn */}
         <div className="footer__bottom">
           <hr className="footer__divider" />
           <div className="footer__copyright-row">
