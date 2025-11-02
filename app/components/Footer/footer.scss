@@ -1,0 +1,206 @@
+@import "../../styles/variable";
+
+.footer {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding-top: 50px;
+
+  &__wrapper {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    flex: 1;
+    min-width: 200px;
+
+    &--about {
+      flex: 1.5;
+      min-width: 280px;
+    }
+  }
+
+  &__divider {
+    border: none;
+    border-top: 1px solid var(--text-color);
+    margin: 20px 0;
+  }
+
+  &__bottom {
+    padding-bottom: 20px;
+  }
+
+  &__copyright-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  &__copyright {
+    font-family: var(--font-heebo);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--text-color);
+  }
+}
+
+.about-col {
+  &__logo {
+    width: 216px;
+  }
+
+  &__text {
+    font-family: var(--font-heebo);
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-top: 25px;
+  }
+
+  &__social-links {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  background-color: #7cbfc5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-top: 25px;
+  &:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+  }
+}
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+
+  &__title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 24.2px;
+    color: var(--text-color);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    color: var(--text-color);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 2.2;
+    font-size: 16px;
+
+    &::before {
+      width: 13px;
+      height: 13px;
+      background-color: #7cbfc5;
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      margin-right: 7px;
+    }
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+
+  &__title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 24.2px;
+    color: var(--text-color);
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.item-icon {
+  color: #7cbfc5;
+  margin-right: 5px;
+}
+
+// 6. Media Queries (Moslashuvchanlik)
+@media (max-width: 992px) {
+  .footer__main-content {
+    gap: 30px;
+  }
+
+  .footer__column {
+    min-width: calc(50% - 15px); /* Ikkita ustun qatori */
+
+    &--about {
+      min-width: 100%; /* Mobil ekranda birinchi ustun to'liq kenglikni oladi */
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__column {
+    min-width: 100%; /* Mobil ekranda har bir ustun yangi qatorga o'tadi */
+  }
+
+  .footer__copyright-row {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .footer__designer {
+      margin-top: 10px;
+    }
+  }
+}

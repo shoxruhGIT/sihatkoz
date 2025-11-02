@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  &-text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
